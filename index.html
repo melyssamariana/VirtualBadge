@@ -19,49 +19,48 @@
             <img src="images/build.svg" alt="selo" />
           </span>
 
-          <img src="images/avatar.jpg" alt="Foto pessoal" />
+          <img id="UserImage" alt="Foto pessoal" />
         </div>
 
-        <h1 id="userName">Melyssa Mariana</h1>
-        <a href="https://github.com/melyssamariana" target="_blank">
+        <h1 id="userName">Name</h1>
+        <a id="userLink" href="https://github.com" target="_blank">
           <img src="images/github.svg" alt="ícone github" />
-          melyssamariana
+          <span id="userLogin">user</span>
         </a>
 
-        <p>Computer Engineering Student</p>
+        <p id="userBio">Description</p>
 
         <ul id="socialLinks">
-          <li class="instagram">c</li>
-
-          <li class="linkedin">
-            <a
-              href="https://www.linkedin.com/in/melyssa-mariana-6ab669174/"
-              target="_blank"
-            >
-              <img src="images/linkedin.svg" alt="ícone linkedin" />
+          <li class="instagram">
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="images/iconInstagram.svg" alt="ícone instagram" />
             </a>
           </li>
 
-          <li class="medium">b</li>
+          <li class="linkedin">
+            <a href="https://www.linkedin.com/in/" target="_blank">
+              <img src="images/iconLinkedin.png" alt="ícone linkedin" />
+            </a>
+          </li>
+
+          <li class="email">
+            <a
+              href="https://mail.google.com/mail/u/0/?fs=1&to=someone@example.com&su=SUBJECT&body=BODY&bcc=someone.else@example.com&tf=cm"
+              target="_blank"
+            >
+              <img src="images/iconEmail.png" alt="ícone email" />
+            </a>
+          </li>
+
+          <li class="medium">
+            <a href="https://medium.com/" target="_blank">
+              <img src="images/iconMedium.png" alt="ícone medium" />
+            </a>
+          </li>
         </ul>
       </div>
     </main>
 
-    <script>
-      const LinksSocialMedia = {
-        medium: 'melyssamariana',
-        instagram: 'melyssamariana',
-        linkedin: 'melyssa-mariana-6ab669174'
-      }
-
-      function changeSocialMediaLinks() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute('class')
-          li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
-        }
-      }
-
-      changeSocialMediaLinks()
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
